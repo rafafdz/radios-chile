@@ -3,7 +3,12 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
+// Ruta pública del sitio. Por defecto "/" (dev, preview, hosting en raíz);
+// el workflow de GitHub Pages la define como "/radios-chile/".
+const base = process.env.BASE_PATH ?? '/'
+
 export default defineConfig({
+  base,
   plugins: [
     react(),
     VitePWA({
@@ -11,14 +16,14 @@ export default defineConfig({
       injectRegister: false,
       includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
       manifest: {
-        id: '/',
+        id: base,
         name: 'Radio Chile',
         short_name: 'Radio Chile',
         description: 'Las radios chilenas en vivo, en un solo lugar: noticias, música, deportes, cultura y regiones.',
         lang: 'es-CL',
         dir: 'ltr',
-        start_url: '/',
-        scope: '/',
+        start_url: base,
+        scope: base,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#faf6ef',

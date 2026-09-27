@@ -235,8 +235,8 @@ export function usePlayer(queue: Station[]) {
         artist: [station.frequency, station.city ?? station.region].filter(Boolean).join(' · '),
         album: 'Radio Chile · En vivo',
         artwork: [
-          { src: '/pwa-192x192.png', sizes: '192x192', type: 'image/png' },
-          { src: '/pwa-512x512.png', sizes: '512x512', type: 'image/png' },
+          { src: `${import.meta.env.BASE_URL}pwa-192x192.png`, sizes: '192x192', type: 'image/png' },
+          { src: `${import.meta.env.BASE_URL}pwa-512x512.png`, sizes: '512x512', type: 'image/png' },
         ],
       })
     }

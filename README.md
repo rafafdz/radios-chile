@@ -82,7 +82,11 @@ Las frecuencias del dial se incluyen sólo cuando eran conocidas con certeza; si
 `npm run build` genera `dist/`, un sitio estático. Puedes publicarlo en Netlify, Vercel, Cloudflare Pages, GitHub Pages o cualquier CDN:
 
 - Sírvelo **por HTTPS**: es obligatorio para el service worker, la instalación y para no bloquear el audio por contenido mixto.
-- La app asume que se sirve desde la raíz (`/`). Para un subdirectorio (por ejemplo GitHub Pages de proyecto), define `base` en `vite.config.ts` y ajusta `start_url` y `scope` del manifest.
+- La ruta pública se controla con la variable `BASE_PATH` (por defecto `/`). Ajusta a la vez `base` de Vite, `id`/`start_url`/`scope` del manifest, el service worker y los iconos. Ejemplo para un subdirectorio: `BASE_PATH=/radios-chile/ npm run build`.
+
+### GitHub Pages
+
+Publicada en **https://rafafdz.github.io/radios-chile/**. El workflow `.github/workflows/deploy-pages.yml` corre en cada push a `main` (o a mano desde *Actions → Run workflow*): `npm ci` → `npm test` → `npm run build` con `BASE_PATH=/<nombre-del-repo>/` → publica `dist/` con `actions/deploy-pages`. En *Settings → Pages* la fuente debe ser **GitHub Actions**.
 - Configura `sw.js` con `Cache-Control: no-cache` para que las actualizaciones lleguen pronto. Cuando hay una versión nueva, la app ofrece un aviso de *Actualizar*.
 - Offline funciona la interfaz completa (catálogo, búsqueda y favoritos). El audio, por supuesto, necesita conexión. Los streams nunca se cachean.
 

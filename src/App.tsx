@@ -103,7 +103,7 @@ export default function App() {
       </a>
       <header className="topbar">
         <div className="topbar__inner">
-          <a className="brand" href="/" aria-label="Radio Chile, inicio">
+          <a className="brand" href={import.meta.env.BASE_URL} aria-label="Radio Chile, inicio">
             <span className="brand__mark" aria-hidden="true">
               <BroadcastIcon size={18} />
             </span>
