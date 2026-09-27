@@ -1,0 +1,269 @@
+{
+ "retrieved": "2026-09-27",
+ "logos": {
+  "biobio-santiago": {
+   "source": "https://www.biobiochile.cl/assets/biobiochile/img/icons/apple-touch-icon-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "cooperativa": {
+   "source": "https://www.cooperativa.cl/icons/apple-touch-icon.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "adn": {
+   "source": "https://cr00.epimg.net/especiales/recursosgraficos/adn_ser_192.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "agricultura": {
+   "source": "https://www.radioagricultura.cl/_templates/desktop/includes/img/favicon.jpg",
+   "origin": "site:shortcut icon"
+  },
+  "pauta": {
+   "source": "https://www.pauta.cl/_templates/desktop/includes/img/apple-touch-icon-152x152.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "tele13-radio": {
+   "source": "https://ott-assets.mdstrm.com/5c58a34e176c2c0813b22e4b/633dbb143707aa086a5ba377/assets/IsotipoT13.png",
+   "origin": "site:icon"
+  },
+  "carabineros": {
+   "source": "https://www.carabineros.cl/img/carabineros.png",
+   "origin": "site:shortcut icon"
+  },
+  "colocolo": {
+   "source": "https://radiocolocolo.cl/icon.png",
+   "origin": "site:icon"
+  },
+  "pudahuel": {
+   "source": "https://www.pudahuel.cl/wp-content/uploads/2020/02/3dc0f632e699fbf057ae40f404af1d64-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "corazon": {
+   "source": "https://www.corazon.cl/wp-content/uploads/2018/09/cropped-android-chrome-512x512-1-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "imagina": {
+   "source": "https://www.imagina.cl/content/themes/meat-theme/dist/images/favicons/apple-icon-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "rockandpop": {
+   "source": "https://www.rockandpop.cl/wp-content/uploads/2022/06/cropped-fav-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "los40": {
+   "source": "https://los40es00.epimg.net/estaticos/recursosgraficos/v1/img/app/los40_192.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "concierto": {
+   "source": "https://www.concierto.cl/wp-content/themes/byrne/img/fav/apple-touch-icon.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "fmdos": {
+   "source": "https://www.fmdos.cl/wp-content/uploads/2025/05/cropped-fmdos-logo@800x-180x180.webp",
+   "origin": "site:apple-touch-icon"
+  },
+  "futuro": {
+   "source": "https://www.futuro.cl/wp-content/themes/ringo/img/favicon/apple-touch-icon.png?v=2021",
+   "origin": "site:apple-touch-icon"
+  },
+  "activa": {
+   "source": "https://www.radioactiva.cl/wp-content/uploads/2018/09/android-icon-192x192-2.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "sonar": {
+   "source": "https://ott-assets.mdstrm.com/5c58a34e176c2c0813b22e4b/62962ecb3aabd15c7cd55bbc/assets/favicon.png",
+   "origin": "site:icon"
+  },
+  "playfm": {
+   "source": "https://ott-assets.mdstrm.com/5c58a34e176c2c0813b22e4b/633db501b938191960de607d/assets/LOGOPLAY04.png",
+   "origin": "site:icon"
+  },
+  "romantica": {
+   "source": "https://www.romantica.cl/_templates/desktop/includes/img/favicon.png",
+   "origin": "site:shortcut icon"
+  },
+  "infinita": {
+   "source": "https://www.infinita.cl/_templates/desktop/includes/img/favicon.png",
+   "origin": "site:shortcut icon"
+  },
+  "universo": {
+   "source": "https://universo.cl/_templates/globals/img/apple-icon-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "paula": {
+   "source": "https://radio.paula.cl/player/icon-paula.png",
+   "origin": "site:og"
+  },
+  "recuerdos": {
+   "source": "https://www.radiorecuerdos.cl/wp-content/uploads/2021/08/cropped-Caratula-Player-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "laretro": {
+   "source": "https://www.laretro.cl/icons/apple-icon-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "codigometal": {
+   "source": "https://www.codigometal.cl/logo_redes.jpg",
+   "origin": "site:og"
+  },
+  "13c": {
+   "source": "https://ott-assets.mdstrm.com/5c58a34e176c2c0813b22e4b/6305400df11545083964b856/assets/favicon_Radio13c1.png",
+   "origin": "site:icon"
+  },
+  "uchile": {
+   "source": "https://radio.uchile.cl/wp-content/themes/duch-2026/assets/i/favicon-114px.png",
+   "origin": "site:apple-touch-icon icon-precomposed"
+  },
+  "sol-antofagasta": {
+   "source": "https://radiosol.cl/wp-content/uploads/2020/04/icon.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "ua-antofagasta": {
+   "source": "https://radioua.cl/wp-content/uploads/2026/06/logo-radio-ua.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "fmplus-antofagasta": {
+   "source": "https://s3-mspro.nyc3.cdn.digitaloceanspaces.com/tenant/5f3c32e7bc6bd007054065ad/mediaLibrary/photo/ea5143f8-b3b3-4bf8-9513-7ffb13ef47af-extra-large-standard-q100.png",
+   "origin": "site:og"
+  },
+  "carnaval-antofagasta": {
+   "source": "https://www.radiocarnaval.cl/wp-content/uploads/2019/10/favicon-webcarnaval.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "maray": {
+   "source": "https://www.maray.cl/wp-content/uploads/2024/09/cropped-ico-png-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "xqa5": {
+   "source": "https://radioxqa5.cl/wp-content/uploads/2025/10/XQA5-LOGO-1-273x272.jpg",
+   "origin": "site:apple-touch-icon"
+  },
+  "cobremar": {
+   "source": "https://radiocobremar.cl/wp-content/uploads/2020/11/cropped-16992359_1264977716921496_6536192034114262655_o-180x180.jpg",
+   "origin": "site:apple-touch-icon"
+  },
+  "guayacan": {
+   "source": "https://radioguayacan.cl/wp-content/uploads/2024/12/Logo-300x300.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "carnaval-laserena": {
+   "source": "https://www.radiocarnaval.cl/wp-content/uploads/2019/10/favicon-webcarnaval.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "encanto": {
+   "source": "https://radioencanto.cl/wp-content/uploads/2021/01/Sin-titulo-1.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "biobio-valparaiso": {
+   "source": "https://www.biobiochile.cl/assets/biobiochile/img/icons/apple-touch-icon-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "ucv": {
+   "source": "https://ucvradio.cl/wp-content/uploads/2025/05/cropped-logo-UCV-RADIO-favicon-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "usm": {
+   "source": "https://radio.usm.cl/wp-content/uploads/2021/11/logo.png",
+   "origin": "site:og"
+  },
+  "carnaval-vina": {
+   "source": "https://www.radiocarnaval.cl/wp-content/uploads/2019/10/favicon-webcarnaval.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "contemporanea": {
+   "source": "https://www.radiocontemporanea.cl/wp-content/uploads/2023/01/cropped-android-chrome-512x512-1-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "bonita": {
+   "source": "https://www.bonitafm.cl/wp-content/uploads/2025/09/cropped-01.-Logo-RB-NEGRO-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "colombina": {
+   "source": "https://colombinafm.cl/wp-content/uploads/2025/01/Logo-footer-colombina-small.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "rtl-curico": {
+   "source": "https://radiortl.cl/wp-content/uploads/2026/02/favicon.jpg",
+   "origin": "site:apple-touch-icon"
+  },
+  "paloma-talca": {
+   "source": "https://radiopaloma.cl/icon.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "ancoa": {
+   "source": "https://s3-mspro.nyc3.cdn.digitaloceanspaces.com/tenant/5fd388ccfae2191165f5a37b/mediaLibrary/photo/78c6a46e-c370-4185-b35a-047f4ce62e58-extra-large-standard-q100.webp",
+   "origin": "radio-browser"
+  },
+  "marisol": {
+   "source": "https://www.radiomarisol.cl/icon.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "la-discusion": {
+   "source": "https://ladiscusion.cl/wp-content/uploads/2026/03/cropped-156-logo-400-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "biobio-concepcion": {
+   "source": "https://www.biobiochile.cl/assets/biobiochile/img/icons/apple-touch-icon-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "biobio-losangeles": {
+   "source": "https://www.biobiochile.cl/assets/biobiochile/img/icons/apple-touch-icon-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "digital-concepcion": {
+   "source": "https://digitalfm.cl/wp-content/themes/digitalfm/assets/images/mobile-app/192x192.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "interamericana": {
+   "source": "https://radiointeramericana.cl/wp-content/uploads/2025/04/favicon-1-300x300.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "llacolen": {
+   "source": "https://radiollacolen.com/wp-content/uploads/2025/04/Radio-Llacolen-Logo-Small-2.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "biobio-temuco": {
+   "source": "https://www.biobiochile.cl/assets/biobiochile/img/icons/apple-touch-icon-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "edelweiss": {
+   "source": "https://edelweiss.fm/images/favicon.png",
+   "origin": "site:icon"
+  },
+  "universal": {
+   "source": "https://www.radiouniversal.cl/site-media/images/LOGO_favicon_1-150x147.png",
+   "origin": "site:shortcut icon"
+  },
+  "biobio-valdivia": {
+   "source": "https://www.biobiochile.cl/assets/biobiochile/img/icons/apple-touch-icon-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "austral-valdivia": {
+   "source": "https://www.radioaustralvaldivia.cl/storage/2026/07/cropped-a-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "genoveva": {
+   "source": "https://radiogenoveva.cl/wp-content/uploads/2019/05/Logo-Radio-Genoveva1-1024x614.png",
+   "origin": "radio-browser"
+  },
+  "biobio-puertomontt": {
+   "source": "https://www.biobiochile.cl/assets/biobiochile/img/icons/apple-touch-icon-180x180.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "las-nieves": {
+   "source": "https://www.rln.cl/wp-content/uploads/2024/01/RLN-LOGO-01-300x300.png",
+   "origin": "site:icon"
+  },
+  "carnaval-puntaarenas": {
+   "source": "https://www.radiocarnaval.cl/wp-content/uploads/2019/10/favicon-webcarnaval.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "valentin-letelier": {
+   "source": "https://rvl.uv.cl/images/base/logo3o.png",
+   "origin": "site:apple-touch-icon"
+  },
+  "tornagaleones": {
+   "source": "https://www.radiotornagaleones.cl/radio-assets/apple-touch-icon.png",
+   "origin": "site:apple-touch-icon"
+  }
+ }
+}

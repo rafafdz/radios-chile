@@ -4,6 +4,7 @@ PWA para escuchar radios chilenas en vivo: noticias, música, deportes, cultura 
 
 - **86 emisoras con stream HTTPS verificado** (más 5 listadas como *no disponibles*), de 15 regiones.
 - Reproductor fijo con play/pausa, anterior/siguiente, estado *En vivo* con tiempo transcurrido, volumen y silencio (persistidos) y selector de emisora.
+- Logos oficiales de 66 emisoras (self-hosted, lazy, con monograma de respaldo).
 - Pantalla *Ahora sonando*, onboarding inicial y estados vacíos, de carga, de error y de *stream no disponible*.
 - Favoritos en `localStorage`, sincronizados entre pestañas.
 - Instalable (manifest, iconos, maskable, service worker Workbox) con app shell offline.
@@ -65,7 +66,20 @@ Las URLs provienen de:
   - Hostings regionales (`digitalproserver.com`, `tustreaming.cl`, `streaminghd.cl`, `radio.co`, `zeno.fm`, etc.) para el resto.
 - La `homepage` de cada emisora se comprobó con una petición HTTP. Algunos sitios chilenos no responden desde fuera de Chile o tienen cadenas de certificado incompletas que los navegadores sí toleran.
 
-Las frecuencias del dial se incluyen sólo cuando eran conocidas con certeza; si no, se omiten. Los logos son monogramas tipográficos con un color aproximado de cada marca: no se enlazan imágenes de terceros, que suelen romperse o tener restricciones de uso.
+Las frecuencias del dial se incluyen sólo cuando eran conocidas con certeza; si no, se omiten.
+
+### Logos
+
+**66 de 91 emisoras tienen logo oficial.** El resto usa un monograma tipográfico sobre el color de la marca, con el mismo tamaño y forma.
+
+- **Origen:** cada logo se descargó el 2026-09-27 **del sitio oficial de la emisora** (su `apple-touch-icon`, un favicon grande o su `og:image` cuadrada). No se usaron imágenes de directorios o hostings de terceros. La URL exacta de cada archivo está en [`public/logos/sources.json`](public/logos/sources.json).
+- **Self-hosted:** los logos se sirven desde `public/logos/<id>.webp` (máximo 256 px, 520 KB en total). No dependen de servidores externos, así que no hay problemas de CORS, hotlinking ni imágenes que desaparezcan. El service worker los guarda a medida que se ven y no los incluye en la instalación.
+- **Módulo:** `src/data/logos.ts` indica qué emisoras tienen logo y cómo se ajusta: `cover` si trae fondo propio, `contain` sobre una placa clara si es transparente o no es cuadrado.
+- **Carga:** las imágenes usan `loading="lazy"`, `decoding="async"`, tamaño explícito y `alt` ("Logo de …"). El monograma queda debajo: se ve mientras carga y, si la imagen falla (`onerror`), la app vuelve a él sin mostrar un ícono roto.
+- **Descartados:** Duna (el ícono del sitio no es el logo), El Loa (recorte ilegible) y Contexto Ñuble (captura de pantalla). También Carolina, Radio Club 80, Super45, Beethoven, Cariñosa, U. de Talca y Musicoop, porque sólo había versiones en sitios de terceros.
+- **Agregar un logo:** guarda `public/logos/<id>.webp` (cuadrado, ≤256 px), añade `'<id>': 'cover' | 'contain'` en `src/data/logos.ts` y registra la URL de origen en `sources.json`. `npm test` verifica que el archivo exista y que su origen esté documentado.
+
+Los logos y marcas pertenecen a sus respectivas emisoras y se usan sólo para identificarlas.
 
 **Marcadas como no disponibles** (hay stream, pero no es reproducible en un sitio HTTPS):
 

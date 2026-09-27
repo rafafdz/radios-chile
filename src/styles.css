@@ -852,8 +852,40 @@ kbd {
     opacity 0.25s,
     transform 0.3s var(--ease);
 }
+.logo__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    filter 0.3s ease;
+}
+/* Placa clara para logos con transparencia o no cuadrados. */
+.logo.has-image {
+  background: #fff;
+}
+.logo--contain .logo__img {
+  object-fit: contain;
+  padding: 12%;
+}
+.logo.has-image .logo__img {
+  opacity: 1;
+}
+.logo.has-image .logo__text {
+  opacity: 0;
+}
+.logo.has-image.is-playing .logo__img {
+  filter: brightness(0.35) saturate(0.6);
+}
+.logo.has-image.is-playing {
+  background: var(--brand);
+}
 .eq {
   position: absolute;
+  z-index: 1;
   inset: 0;
   display: flex;
   align-items: flex-end;

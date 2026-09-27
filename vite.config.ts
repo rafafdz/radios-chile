@@ -38,11 +38,17 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2,webmanifest}'],
         // hls.js sólo se usa para algunas emisoras y nunca sin conexión: se cachea al usarse.
-        globIgnores: ['**/hls*.js', '**/*cyrillic*', '**/*vietnamese*', '**/*greek*'],
+        globIgnores: ['logos/**', '**/hls*.js', '**/*cyrillic*', '**/*vietnamese*', '**/*greek*'],
         navigateFallback: 'index.html',
         cleanupOutdatedCaches: true,
         // Los streams de audio nunca se cachean: son infinitos y en vivo.
         runtimeCaching: [
+          {
+            // Logos: se cachean a medida que se ven, no en la instalación.
+            urlPattern: ({ url, sameOrigin }) => sameOrigin && /\/logos\/[^/]+\.webp$/.test(url.pathname),
+            handler: 'CacheFirst',
+            options: { cacheName: 'station-logos', expiration: { maxEntries: 120, maxAgeSeconds: 60 * 60 * 24 * 60 } },
+          },
           {
             urlPattern: ({ url, sameOrigin }) => sameOrigin && /\/assets\/.+\.(js|woff2)$/.test(url.pathname),
             handler: 'CacheFirst',

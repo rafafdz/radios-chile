@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import type Hls from 'hls.js'
 import { isAvailable, STATIONS, type Station } from '../data/stations'
 import { readJSON, STORAGE_KEYS, writeJSON } from '../lib/storage'
+import { logoUrl } from '../data/logos'
 
 export type PlayerStatus = 'idle' | 'loading' | 'playing' | 'paused' | 'error'
 
@@ -235,6 +236,7 @@ export function usePlayer(queue: Station[]) {
         artist: [station.frequency, station.city ?? station.region].filter(Boolean).join(' · '),
         album: 'Radio Chile · En vivo',
         artwork: [
+          ...(logoUrl(station.id) ? [{ src: logoUrl(station.id)!, sizes: '256x256', type: 'image/webp' }] : []),
           { src: `${import.meta.env.BASE_URL}pwa-192x192.png`, sizes: '192x192', type: 'image/png' },
           { src: `${import.meta.env.BASE_URL}pwa-512x512.png`, sizes: '512x512', type: 'image/png' },
         ],
